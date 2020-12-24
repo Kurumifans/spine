@@ -1,0 +1,145 @@
+canvas {
+    cursor: default;
+    outline: none;
+}
+
+body 
+{
+    background-color: #3A4655;
+    margin: 0px; 
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.main
+{
+  position: relative;
+}
+.openbtn
+{
+  padding: 20px;
+  color: white;
+  font-size: 50px;
+  text-decoration: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.content
+{
+  margin-right: 20px;
+  margin-left: 20px;
+  color:white;
+  padding-top: 40px;
+  font-size: large;
+}
+input[type=number]{
+    width: 50px;
+}
+input[type=button]{
+    background-color: #3A4655;
+    border-radius: 4px;
+    color: white;
+}
+input[type=button]:hover
+{
+  background-color: #4B5664;
+}
+input[type=button]:active
+{
+  background-color: #526E91;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+progress
+{
+  width: 100%;
+}
+select
+{
+  max-width: 100%;
+  vertical-align: top;
+  border: 0px;
+}
+*:focus
+{
+  border: none;
+  outline: none;
+}
+
+.content div
+{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  align-items: center;
+}
+input
+{
+  border:none;
+  border-bottom-width: 0px!important;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.settings {
+  height: 100%; 
+  width: 400px; 
+  position: fixed; 
+  display: block;
+  z-index: 3; /* Just in case */
+  top: 0;
+  left: -400px;
+  background-color: #27313e; 
+  overflow-x: hidden; 
+  /*padding-top: 10px; */
+  transition: 0.5s; 
+}
+
+.settings .closebtn {
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+.list
+{
+  width: 100%;
+  right: 10px;
+}
+.settings a:hover {
+  color: #f1f1f1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .settings
+  {
+    padding-top: 15px;
+  }
+  .settings a
+  {
+    font-size: 30px;
+  }
+  .content
+  {
+    font-size: 10px;
+  }
+}
