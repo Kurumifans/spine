@@ -50,36 +50,11 @@ function animationList()
     select.appendChild(el);
   }
 }
-/*function loadList()
-{
-  let listname = document.querySelector('input[name="modle"]:checked').value;
-  let select = document.getElementById("selectmodle"); 
-  select.innerHTML = '';
-  let el = document.createElement("option");
-  el.textContent = "None";
-  el.value = "none";
-  select.appendChild(el);
-  let options;
-  if (listname == "citymodle")  options = citymodleList;
-  else if (listname == "hero")  options = heroList;
-  else if (listname == "weapon")  options = weaponList;
-  for (const [key, value] of Object.entries(options)) {
-    let el = document.createElement("option");
-    el.textContent = key;
-    el.value = value;
-    select.appendChild(el);
-  }
-}*/
-function loadBundle()
-{
-  if (document.getElementById("selectmodle").value != "none")
-  DALFC.user.load(document.getElementById("selectmodle").value);;
-}
 function screenshot()
 {
   let cv = document.getElementsByTagName("canvas")[0];
   let imgSave = window.open();
-  imgSave.document.body.style.backgroundColor = "#3A4655";
+  imgSave.document.body.style.backgroundColor = "#7F7F7F";
   imgSave.document.body.style.margin = "0px";
   imgSave.document.body.innerHTML = '<img src="' + cv.toDataURL("png") + '">';
 }
