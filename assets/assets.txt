@@ -1,1 +1,1 @@
-t:default.txt:default.nocache.txt:20:text/plain:1
+t:default.txt:default.txt:20:text/plain:1
