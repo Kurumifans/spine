@@ -20,6 +20,7 @@
             	}
             	function updateFPS(FPS)
             	{
+            	  document.getElementById('FPS').innerHTML = FPS;
             	}
             	function updateTime(time)
             	{
@@ -142,6 +143,13 @@
                 <a href="javascript:void(0)" class="openbtn" onclick="openView()">⌘</a>
                 <div align="center" id="embed-html" class="canvas">
             </div>
+            <div class="FPS" style="top: 0px;">
+            		<label>FPS: </label>
+            		<label id="FPS"></label>
+            </div>
+           	<div class="log" style="bottom: 0px;">
+            	<label id="log"></label>
+           	</div>
         </body>
         <script type="text/javascript" src="html/html.nocache.js"></script>
         <script type="text/javascript" src="app.js"></script>
