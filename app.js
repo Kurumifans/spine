@@ -28,6 +28,8 @@ function closeView() {
 }
 function skinList()
 {
+  let same;
+  let skin = document.getElementById("skin").value;
   let select = document.getElementById("skin"); 
   select.innerHTML = '';
   let el = document.createElement("option");
@@ -35,11 +37,15 @@ function skinList()
     let el = document.createElement("option");
     el.textContent = value;
     el.value = value;
+    if (value == skin) same = true
     select.appendChild(el);
   }
+  if (same) document.getElementById("skin").value = skin;
 }
 function animationList()
 {
+  let same;
+  let anim = document.getElementById("animation").value;
   let select = document.getElementById("animation"); 
   select.innerHTML = '';
   let el = document.createElement("option");
@@ -47,8 +53,10 @@ function animationList()
     let el = document.createElement("option");
     el.textContent = value;
     el.value = value;
+    if (value == anim) same = true
     select.appendChild(el);
   }
+  if (same) document.getElementById("animation").value = anim;
 }
 function screenshot()
 {
